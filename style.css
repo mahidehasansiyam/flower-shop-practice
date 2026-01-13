@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: .05%;
 }
 .banner-text {
   width: 708px;
@@ -231,6 +231,7 @@ p {
 .deal {
   background-image: url('./Flower Asset/Rectangle 9.png');
   padding: 122px 287px;
+  margin-bottom: 128px;
 }
 .deal h2 {
   text-align: center;
