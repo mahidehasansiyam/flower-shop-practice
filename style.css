@@ -102,8 +102,7 @@ button {
 }
 /* shared */
 .feature,
-.service,
-.instagram,
+.service, 
 .deal {
   width: 75%;
   max-width: 1440px;
@@ -133,13 +132,14 @@ p {
   line-height: 30px;
 }
 .feature-body {
-  display: flex;
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
 }
-.feature-body .first-card,
+.first-card,
 .second-card,
 .third-card {
   display: flex;
@@ -158,8 +158,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 464px;
-  height: 538px;
+  width: 350px;
+  height: 520px;
   border-radius: 300px 300px 0 0;
 }
 .feature-body .purple {
@@ -172,13 +172,13 @@ p {
   background-color: rgba(71, 125, 17, 0.15);
 }
 .feature-card img.first-image {
-  margin-bottom: -111px;
+  margin-bottom: -94px;
 }
 .feature-card img.second-image {
   margin-bottom: -100px;
 }
 .feature-card img.third-image {
-  margin-bottom: -68px;
+  margin-bottom: -50px;
 }
 
 .feature-footer {
@@ -230,6 +230,8 @@ p {
 }
 .instagram {
   margin-bottom: 128px;
+  width: 90%;
+  margin: 48px auto 128px;
 }
 .instagram-title {
   text-align: center;
@@ -242,10 +244,14 @@ p {
   margin-bottom: 24px;
 }
 .instagram-pic {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   justify-content: center;
   align-items: center;
+}
+.instagram-pic img{
+  width: 100%;
 }
 .deal {
   background-image: url('./Flower Asset/Rectangle 9.png');
@@ -270,7 +276,7 @@ p {
   /* width: 866px; */
 }
 .deal .form input {
-  width: 800px;
+  width: 600px;
   font-size: 16px;
   padding: 22px 513px 22px 22px;
   border: none;
@@ -416,18 +422,12 @@ footer p {
   .deal .form input {
     padding: 22px 50px 22px 22px;
   }
-  .feature,
-  .service,
-  .instagram,
-  .deal {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  footer{
-    width: 100%;
-  }
-  .feature-card{
-    width: 100%;
-  }
+.hot-deal {
+   
+    gap: 100px;
+    padding-left:50px ;
+}
+  .instagram {
+    margin-bottom: 50px;
+}
 }
