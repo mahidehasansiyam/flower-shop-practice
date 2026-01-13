@@ -102,7 +102,7 @@ button {
 }
 /* shared */
 .feature,
-.service, 
+.service,
 .deal {
   width: 75%;
   max-width: 1440px;
@@ -133,7 +133,10 @@ p {
 }
 .feature-body {
   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+  width: 100%;
+  margin: 0 auto;
   gap: 24px;
   justify-content: center;
   align-items: center;
@@ -158,9 +161,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 520px;
+  width: 100%;
+  height: 470px;
   border-radius: 300px 300px 0 0;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .feature-body .purple {
   background-color: rgba(167, 33, 98, 0.15);
@@ -172,13 +177,13 @@ p {
   background-color: rgba(71, 125, 17, 0.15);
 }
 .feature-card img.first-image {
-  margin-bottom: -94px;
+  margin-bottom: -45px;
 }
 .feature-card img.second-image {
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
 .feature-card img.third-image {
-  margin-bottom: -50px;
+  margin-bottom: -2px;
 }
 
 .feature-footer {
@@ -250,15 +255,16 @@ p {
   justify-content: center;
   align-items: center;
 }
-.instagram-pic img{
+.instagram-pic img {
   width: 100%;
 }
 .deal {
   background-image: url('./Flower Asset/Rectangle 9.png');
-  
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 128px;
 }
-.deal .core{
+.deal .core {
   padding: 120px 250px;
 }
 .deal h2 {
@@ -279,9 +285,9 @@ p {
   /* width: 866px; */
 }
 .deal .form input {
-  width: 800px;
+  width: 600px;
   font-size: 16px;
-  padding: 22px 513px 22px 22px;
+  padding: 22px 100px 22px 22px;
   border: none;
   border-radius: 8px;
 }
@@ -317,7 +323,6 @@ footer p {
   .banner {
     flex-direction: column;
     text-align: center;
-    /* width: 100%; */
   }
 
   .banner-text {
@@ -356,9 +361,11 @@ footer p {
     flex-direction: column;
   }
   .deal {
-    background-image: url('./Flower Asset/Rectangle 9.png');
     padding: 20px;
   }
+  .deal .core {
+    padding: 20px 20px;
+}
   .deal .form {
     flex-direction: column;
     gap: 16px;
@@ -383,7 +390,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 567px) and (max-width: 992px) {
+@media screen and (min-width: 567px) and (max-width: 1050px) {
   .banner-text h1 {
     font-size: 40px;
     font-weight: extra-bold;
@@ -415,22 +422,25 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .third-card{
+  .third-card {
     justify-content: center;
     width: 100%;
   }
   .deal {
     padding: 50px 20px;
   }
+    .deal .core {
+    padding: 50px 20px;
+  }
+}
   .deal .form input {
     padding: 22px 50px 22px 22px;
   }
-.hot-deal {
-   
+  .hot-deal {
     gap: 100px;
-    padding-left:50px ;
-}
+    padding-left: 50px;
+  }
   .instagram {
     margin-bottom: 50px;
-}
-}
+  }
+
