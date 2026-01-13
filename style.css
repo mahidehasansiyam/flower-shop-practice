@@ -104,11 +104,12 @@ button {
 .service,
 .instagram,
 .deal {
+  width: 75%;
   max-width: 1440px;
   margin: 0 auto;
 }
 p {
-  color: rgba(39, 39, 39, 0.6);
+  color: rgba(39, 39, 39, 0.8);
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 32px;
@@ -134,21 +135,13 @@ p {
   align-items: center;
   margin-bottom: 32px;
 }
-.feature-pic {
+.feature-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
   width: 464px;
   height: 538px;
   border-radius: 300px 300px 0 0;
-}
-.feature-pic img.first {
-  margin-bottom: -111px;
-}
-.feature-pic img.third {
-  margin-bottom: -68px;
 }
 .feature-body .purple {
   background-color: rgba(167, 33, 98, 0.15);
@@ -159,6 +152,16 @@ p {
 .feature-body .gray {
   background-color: rgba(71, 125, 17, 0.15);
 }
+.feature-card img.first-image {
+  margin-bottom: -111px;
+}
+.feature-card img.second-image {
+  margin-bottom: -100px;
+}
+.feature-card img.third-image {
+  margin-bottom: -68px;
+}
+
 .feature-footer {
   display: flex;
   justify-content: space-around;
@@ -209,24 +212,24 @@ p {
 .instagram {
   margin-bottom: 128px;
 }
-.instagram-title{
+.instagram-title {
   text-align: center;
   max-width: 594px;
   margin: 128px auto 48px;
 }
-.instagram-title h2{
+.instagram-title h2 {
   font-size: 40px;
   font-weight: extra-bold;
   margin-bottom: 24px;
 }
-.instagram-pic{
+.instagram-pic {
   display: flex;
   gap: 24px;
   justify-content: center;
   align-items: center;
 }
-.deal{
-  background-image: url("./Flower Asset/Rectangle 9.png");
+.deal {
+  background-image: url('./Flower Asset/Rectangle 9.png');
   padding: 122px 287px;
 }
 .deal h2 {
@@ -235,44 +238,43 @@ p {
   font-weight: extra-bold;
   margin-bottom: 16px;
 }
-.deal p{
+.deal p {
   text-align: center;
   margin-bottom: 48px;
 }
-.deal .form{
+.deal .form {
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
   /* width: 866px; */
 }
-.deal .form input{
+.deal .form input {
   width: 800px;
   font-size: 16px;
   padding: 22px 513px 22px 22px;
   border: none;
   border-radius: 8px;
 }
-footer{
+footer {
   background-color: rgba(17, 16, 16, 1);
   text-align: center;
   margin-bottom: 0;
 }
-footer h2{
+footer h2 {
   color: white;
   font-size: 48px;
   font-weight: extra-bold;
   padding-top: 128px;
   margin-bottom: 24px;
 }
-footer h2 span{
+footer h2 span {
   color: #e55473;
 }
-footer .copyright{
+footer .copyright {
   color: rgba(255, 255, 255, 0.4);
   padding-bottom: 128px;
 }
-footer p{
+footer p {
   color: white;
-  
 }
