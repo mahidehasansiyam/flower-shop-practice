@@ -358,7 +358,7 @@ footer p {
     text-align: center;
   }
   .instagram-pic {
-    flex-direction: column;
+    grid-template-columns: repeat(1 , 1fr);
   }
   .deal {
     padding: 20px;
