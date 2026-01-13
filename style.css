@@ -1,4 +1,278 @@
-h2{
-    color: blue;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lato-thin {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Start */
+.banner {
+  background-color: rgba(229, 84, 115, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.banner-text {
+  width: 708px;
+}
+.banner-text h1 {
+  font-size: 80px;
+  font-weight: extra-bold;
+  margin-bottom: 32px;
+}
+.banner-text p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #272727;
+  margin-bottom: 32px;
+}
+button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #e55473;
+  padding: 20px 45px;
+  border-radius: 8px;
+  border: none;
+}
+.banner-pic img {
+  width: 100%;
+  margin-top: 50px;
+}
+/* shared */
+.feature,
+.service,
+.instagram,
+.deal {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+.feature-title {
+  width: 594px;
+  margin: 178px auto 48px auto;
+  text-align: center;
+}
+.feature-title h2 {
+  font-size: 40px;
+  font-weight: extra-bold;
+  margin-bottom: 24px;
+}
+.feature-title p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.feature-body {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.feature-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 464px;
+  height: 538px;
+  border-radius: 300px 300px 0 0;
+}
+.feature-pic img.first {
+  margin-bottom: -111px;
+}
+.feature-pic img.third {
+  margin-bottom: -68px;
+}
+.feature-body .purple {
+  background-color: rgba(167, 33, 98, 0.15);
+}
+.feature-body .blue {
+  background-color: rgba(5, 151, 160, 0.15);
+}
+.feature-body .gray {
+  background-color: rgba(71, 125, 17, 0.15);
+}
+.feature-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 128px;
+}
+.feature-footer a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.service {
+  display: flex;
+  background-color: rgba(39, 39, 39, 0.05);
+  padding: 85px 175px;
+  border-radius: 8px;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 128px;
+}
+.service .first,
+.second,
+.third {
+  text-align: center;
+}
+.hot-deal {
+  display: flex;
+  gap: 186px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(229, 84, 115, 0.05);
+  padding: 100px 0;
+}
+.hot-deal .text {
+  width: 595px;
+}
+.hot-deal .text h2 {
+  font-size: 40px;
+  font-weight: extra-bold;
+  margin-bottom: 24px;
+}
+.hot-deal .text h2 span {
+  color: #e55473;
+}
+.instagram {
+  margin-bottom: 128px;
+}
+.instagram-title{
+  text-align: center;
+  max-width: 594px;
+  margin: 128px auto 48px;
+}
+.instagram-title h2{
+  font-size: 40px;
+  font-weight: extra-bold;
+  margin-bottom: 24px;
+}
+.instagram-pic{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.deal{
+  background-image: url("./Flower Asset/Rectangle 9.png");
+  padding: 122px 287px;
+}
+.deal h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: extra-bold;
+  margin-bottom: 16px;
+}
+.deal p{
+  text-align: center;
+  margin-bottom: 48px;
+}
+.deal .form{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  /* width: 866px; */
+}
+.deal .form input{
+  width: 800px;
+  font-size: 16px;
+  padding: 22px 513px 22px 22px;
+  border: none;
+  border-radius: 8px;
+}
+footer{
+  background-color: rgba(17, 16, 16, 1);
+  text-align: center;
+  margin-bottom: 0;
+}
+footer h2{
+  color: white;
+  font-size: 48px;
+  font-weight: extra-bold;
+  padding-top: 128px;
+  margin-bottom: 24px;
+}
+footer h2 span{
+  color: #e55473;
+}
+footer .copyright{
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 128px;
+}
+footer p{
+  color: white;
+  
 }
